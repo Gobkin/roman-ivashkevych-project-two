@@ -12,7 +12,7 @@ body{
 }
 
 section{
-    padding:80px 0;
+    padding:80px 0 50px;;
 }
 
 ul{
@@ -37,8 +37,16 @@ img{
     justify-content: center;
 }
 
-.center{
+.just-center{
     justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .button{
@@ -141,5 +149,39 @@ section:nth-child(even){
             padding-left: 4px;
         }
     }
+
+    // NEWS STYLES
+
+    .news{
+        .content{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .post{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    // WALLPAPER STYLES
+
+    .wallpaper{
+        background-image: url(../images/banner-image.jpg);
+        background-size: contain;
+    }
+
+    // SEARCH STYLES
+    .search{
+        .content{
+            align-items: center;
+        }
+    }
+    
+
+    // FOOTER STYLES
+
+
     
 }

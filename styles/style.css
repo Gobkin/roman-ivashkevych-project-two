@@ -287,7 +287,7 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 80px 0 50px;
 }
 
 ul {
@@ -316,10 +316,23 @@ img {
           justify-content: center;
 }
 
-.center {
+.just-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .button {
@@ -428,5 +441,35 @@ section:nth-child(even) {
   }
   .info i {
     padding-left: 4px;
+  }
+  .news .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news .post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wallpaper {
+    background-image: url(../images/banner-image.jpg);
+    background-size: contain;
+  }
+  .search .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
