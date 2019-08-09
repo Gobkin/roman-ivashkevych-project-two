@@ -4,75 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline|Lato:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Sanctuary Helpers - Blog</title>
 </head>
 <body>
-    <header>
+    <header class="blog">
         <div class="logo">
             <h3>sanctuary helpers</h3>
         </div>
         <nav>
             <ul class="navbar">
-                <li>home</li>
-                <li>about</li>
-                <li>blog</li>
-                <li>contact</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="">contact</a></li>
             </ul>
         </nav>
-        <h1>blog</h1>
-        <div class="side-img"></div>
+        <div class="hero flex">
+            <h1>blog</h1>
+        </div>
     </header>
 
     <main>
-        <article>
+        <section class="post">
             <div class="wrapper">
-                <img src="" alt="">
-                <div class="content">
-                    <h2>finding the right pieces for new space</h2>
-
-                    <em>Monday, October 5th, 2019 by <span><strong>Saron</strong></span></em>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
-                </div>
-            </div>
-        </article>
-
-        <aside>
-            <div class="aside">
-                <img src="" alt="">
-                <div>
-                    <h3>our mission</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ex sapiente praesentium! Sit reiciendis pariatur fuga? Expedita corrupti ad nisi quisquam voluptate illo quibusdam est ab voluptas excepturi? Ipsam, porro.</p>
-                </div>
-                <div>
-                    <h3>recent posts</h3>
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
-
-        <section class="comments">
-            <div class="wrapper">
-                <div class="recent">
-                    <h3>comments</h3>
-                    <div class="post">
-                        <img src="" alt="">
+                <article>
+                    <div class="wrapper">
+                        <img src="images/blog-post-image.jpg" alt="">
+                        <div class="content">
+                            <h2>finding the right pieces for new space</h2>
+        
+                            <em>Monday, October 5th, 2019 by <span><strong>Saron</strong></span></em>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut saepe provident! Possimus excepturi veniam reprehenderit quas ipsam, nemo numquam ratione id qui odit adipisci animi, iste facilis debitis repellat?</p>
+                        </div>
+                    </div>
+                </article>
+                <h3>comments:</h3>
+                <div class="comments">
+                    <div class="comment">
+                        <img src="images/comment-image.jpg" alt="">
                         <div>
                             <h4>tuesday october 9th, 2019 by davin</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque animi deserunt, debitis assumenda quibusdam perferendis aliquid sit quia harum nihil ipsa nesciunt, quam odit optio omnis reiciendis atque et laborum?</p>
                         </div>
-                        <img src="" alt="">
+                    </div>
+                    <div class="comment">
+                        <img src="images/comment-image2.jpg" alt="">
                         <div>
                             <h4>wednsday october 10th, 2019 by lisa</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ut id possimus asperiores porro qui culpa necessitatibus illum est provident quisquam animi ratione numquam tempora, consequatur ab sed dolorem iste!</p>
                         </div>
+                    </div>
                     </div>
                 </div>
 
@@ -87,6 +73,27 @@
                 </form>
             </div>
         </section>
+
+        <aside>
+            <div class="aside">
+                <img src="" alt="">
+                <div class="mission">
+                    <h3>our mission</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ex sapiente praesentium! Sit reiciendis pariatur fuga? Expedita corrupti ad nisi quisquam voluptate illo quibusdam est ab voluptas excepturi? Ipsam, porro.</p>
+                </div>
+                <div>
+                    <h3>recent posts</h3>
+                    <ul>
+                        <li><a href="">Lorem ipsum dolor sit amet,</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet,</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet,</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet,</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        
         
         <footer>
             <p>copyright c 2019 HackerYou</p>

@@ -1,7 +1,8 @@
-@import "setup";
 @import "typography";
+@import "setup";
 @import "variables";
 @import "animations";
+@import "index";
 
 // GENERAL STYLES
 h1{
@@ -18,6 +19,11 @@ section{
 
 ul{
     margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:$text-color;
 }
 
 .wrapper{
@@ -64,142 +70,38 @@ section:nth-child(even){
 }
 
 @media (min-width:320px){
-
-    // GENERAL STYLES
-    .button{
-        transform: scale(1.2);  
-    }
-
     // HEADER STYLES
-    header{
-        background-image: url(../images/header-home.jpg);
-        .navbar{
-            list-style: none;
-            flex-direction: column;
-            justify-content:flex-end;
-            li{
-                padding:5px;   
-            }
-        }
-
+    .blog{
+        
+            background-image: url(../images/blog-image.jpg);
+            background-position-x: calc(-75% + 50vw);
         .hero{
-            background: rgba(255,255,255,0.8);
-            padding:5% 10%;
-            border-radius: 25px;
-            margin:5%;
-            justify-content: space-around;
-            width:29rem;
-            flex-basis: 29rem;
-        }
-
-        .header-img{
-            justify-content: flex-start;
-            flex-basis: 25%;
-            position: relative;
-
-            img{
-                position: relative;
-                margin-bottom: -25%;
-            }
-        }    
-    }
-
-    // MATERIALS STYLES
-
-    .materials {
-        padding-top:90px;
-        .small-box{
-            width:100%;
-            max-width: 100%;
+            padding:5%;
         }
     }
 
-    // GALLERY STYLES
-    .gallery-content{
-        position: relative;
-        height:35vh;
-        width:100%;
-        align-items: center;
-
+    .post{
+        background: $section-color;
         img{
-            max-width:85%;
-            position: absolute;
-            animation-name: fade;
-            animation-iteration-count: infinite;
-            animation-duration: 9s;
-        }
-
-        .gallery-image2{
-            animation-delay: -3s;
-        }
-
-        .gallery-image3{
-            animation-delay: -6s;
+            max-width:100%;
         }
     }
 
-    // INFO STYLES
-
-    .info{
-        .title{
-            align-items: baseline;
-            justify-content: center;
-            position: relative;
-        }
-
-        .icon{
-            width:100%;
-            height: 4.4rem;
-            width:4.4rem;
-            background: $shadow-color;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-        }
-
-        i{
-            padding-left: 4px;
-        }
+    article{
+        background: #fff;
+        padding:40px 0;
     }
 
-    // NEWS STYLES
-
-    .news{
-        .content{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .post{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-    }
-
-    // WALLPAPER STYLES
-
-    .wallpaper{
-        background-image: url(../images/banner-image.jpg);
-        background-size: contain;
-    }
-
-    // SEARCH STYLES
-    .search{
-        .content{
-            align-items: center;
-        }
-    }
     
-
-    // FOOTER STYLES
-    footer{
-        background: $text-color;
-        color:$section-color;
-        text-align: center;
-        p{
-            margin:0;
-        }
-    }  
 }
+
+// FOOTER STYLES
+footer{
+    background: $text-color;
+    color:$section-color;
+    text-align: center;
+    padding:10px 0;
+    p{
+        margin:0;
+    }
+}  
