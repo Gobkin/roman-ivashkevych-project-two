@@ -12,7 +12,8 @@ body{
 }
 
 section{
-    padding:80px 0 50px;;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 
 ul{
@@ -63,6 +64,13 @@ section:nth-child(even){
 }
 
 @media (min-width:320px){
+
+    // GENERAL STYLES
+    .button{
+        transform: scale(1.2);  
+    }
+
+    // HEADER STYLES
     header{
         background-image: url(../images/header-home.jpg);
         .navbar{
@@ -76,7 +84,7 @@ section:nth-child(even){
 
         .hero{
             background: rgba(255,255,255,0.8);
-            padding:10%;
+            padding:5% 10%;
             border-radius: 25px;
             margin:5%;
             justify-content: space-around;
@@ -98,8 +106,12 @@ section:nth-child(even){
 
     // MATERIALS STYLES
 
-    .materials{
-        padding-top:80px;
+    .materials {
+        padding-top:90px;
+        .small-box{
+            width:100%;
+            max-width: 100%;
+        }
     }
 
     // GALLERY STYLES
@@ -160,9 +172,10 @@ section:nth-child(even){
 
         .post{
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            align-items: center;
         }
+
     }
 
     // WALLPAPER STYLES
@@ -181,7 +194,12 @@ section:nth-child(even){
     
 
     // FOOTER STYLES
-
-
-    
+    footer{
+        background: $text-color;
+        color:$section-color;
+        text-align: center;
+        p{
+            margin:0;
+        }
+    }  
 }
