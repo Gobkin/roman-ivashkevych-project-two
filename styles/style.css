@@ -419,6 +419,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .blog {
     background-image: url(../images/blog-image.jpg);
     background-position-x: calc(-75% + 50vw);
+    padding-bottom: 40px;
   }
   .blog h3 {
     margin: 0;
@@ -457,29 +458,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .comments .comment .comment-text {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
-  }
-  form ::-moz-placeholder {
-    text-transform: uppercase;
-    opacity: 1;
-    color: #151514;
-  }
-  form input {
-    margin-bottom: 20px;
-    border: none;
-    background: #e0fddf;
-    border-bottom: 2px solid #065635;
-  }
-  form textarea {
-    background: #e0fddf;
-    border: 2px solid #065635;
-    margin-bottom: 20px;
-  }
-  form .submit {
-    border: none;
-    background: #065635;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Kumar One", sans-serif;
   }
   .aside {
     -webkit-box-align: center;
@@ -566,6 +544,52 @@ img {
 
 section:nth-child(even) {
   background: #e0fddf;
+}
+
+@media (min-width: 319px) {
+  form ::-moz-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #151514;
+  }
+  form input {
+    margin-bottom: 20px;
+    border: none;
+    background: #e0fddf;
+    border-bottom: 2px solid #065635;
+  }
+  form textarea {
+    background: #e0fddf;
+    border: 2px solid #065635;
+    margin-bottom: 20px;
+  }
+  form .submit {
+    border: none;
+    background: #065635;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Kumar One", sans-serif;
+  }
+  .contact {
+    background-image: url(../../images/contact-image.jpg);
+    background-position-x: calc(-50% + 50vw);
+    padding-bottom: 40px;
+  }
+  .contact h3 {
+    margin: 0;
+    width: 50%;
+    padding: 20px;
+  }
+  .contact .hero {
+    padding: 10% 5%;
+    margin-bottom: 0;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    background: #fff;
+  }
+  .social a {
+    color: #065635;
+  }
 }
 
 footer {
