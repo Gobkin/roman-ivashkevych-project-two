@@ -1,0 +1,91 @@
+@media (min-width:320px){
+    p{
+        font-size: 1.8rem;
+    }
+    //BLOG HEADER STYLES
+    .blog{
+        h3{
+            margin: 0;
+            width:50%;
+            padding:20px;
+        }
+            background-image: url(../images/blog-image.jpg);
+            background-position-x: calc(-75% + 50vw);
+        .hero{
+            padding:10% 5%;
+            margin-bottom: 0;
+        }
+    }
+
+    .post{
+        background: $section-color;
+        img{
+            max-width:100%;
+        }
+    }
+
+    article{
+        background: #fff;
+        padding:40px 0;
+    }
+
+    // BLOG COMMENTS STYLES
+
+    .comments{
+        h4{
+            text-transform: uppercase;
+            margin:0 0 30px 10px;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+
+        .comment{
+            margin-bottom:40px;
+            img{
+                align-self: flex-start;
+                flex-basis:20%;
+            }
+            .comment-text{
+                flex-basis:70%; 
+            }
+        }
+    }
+
+    form{
+        ::-moz-placeholder {
+            text-transform: uppercase;
+            opacity: 1;
+            color: $text-color;
+        }
+
+        input{
+            margin-bottom: 20px;
+            border: none;
+            background:$section-color;
+            border-bottom: 2px solid $button-color;
+        }
+
+        textarea{
+            background:$section-color;
+            border: 2px solid $button-color;
+            margin-bottom:20px;
+        }
+
+        .submit{
+            border:none;
+            background: $button-color;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: "Kumar One", sans-serif;
+        }
+    }
+
+    // ASIDE STYLES
+    .aside{
+        align-items: center;
+        background: $shadow-color;
+        li{
+            font-size: 1.8rem;
+        }
+    }
+}

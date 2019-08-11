@@ -3,6 +3,8 @@
 @import "variables";
 @import "animations";
 @import "index";
+@import "blog";
+// @import "navbar";
 
 // GENERAL STYLES
 h1{
@@ -69,36 +71,10 @@ section:nth-child(even){
     background: $section-color;
 }
 
-@media (min-width:320px){
-    // HEADER STYLES
-    .blog{
-        
-            background-image: url(../images/blog-image.jpg);
-            background-position-x: calc(-75% + 50vw);
-        .hero{
-            padding:5%;
-        }
-    }
-
-    .post{
-        background: $section-color;
-        img{
-            max-width:100%;
-        }
-    }
-
-    article{
-        background: #fff;
-        padding:40px 0;
-    }
-
-    
-}
-
 // FOOTER STYLES
 footer{
     background: $text-color;
-    color:$section-color;
+    color:#fff;
     text-align: center;
     padding:10px 0;
     p{

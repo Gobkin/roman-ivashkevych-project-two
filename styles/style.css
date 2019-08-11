@@ -412,6 +412,86 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
 }
 
+@media (min-width: 320px) {
+  p {
+    font-size: 1.8rem;
+  }
+  .blog {
+    background-image: url(../images/blog-image.jpg);
+    background-position-x: calc(-75% + 50vw);
+  }
+  .blog h3 {
+    margin: 0;
+    width: 50%;
+    padding: 20px;
+  }
+  .blog .hero {
+    padding: 10% 5%;
+    margin-bottom: 0;
+  }
+  .post {
+    background: #e0fddf;
+  }
+  .post img {
+    max-width: 100%;
+  }
+  article {
+    background: #fff;
+    padding: 40px 0;
+  }
+  .comments h4 {
+    text-transform: uppercase;
+    margin: 0 0 30px 10px;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  .comments .comment {
+    margin-bottom: 40px;
+  }
+  .comments .comment img {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .comments .comment .comment-text {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  form ::-moz-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #151514;
+  }
+  form input {
+    margin-bottom: 20px;
+    border: none;
+    background: #e0fddf;
+    border-bottom: 2px solid #065635;
+  }
+  form textarea {
+    background: #e0fddf;
+    border: 2px solid #065635;
+    margin-bottom: 20px;
+  }
+  form .submit {
+    border: none;
+    background: #065635;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Kumar One", sans-serif;
+  }
+  .aside {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f8fb05;
+  }
+  .aside li {
+    font-size: 1.8rem;
+  }
+}
+
 h1 {
   margin: 0;
 }
@@ -488,29 +568,9 @@ section:nth-child(even) {
   background: #e0fddf;
 }
 
-@media (min-width: 320px) {
-  .blog {
-    background-image: url(../images/blog-image.jpg);
-    background-position-x: calc(-75% + 50vw);
-  }
-  .blog .hero {
-    padding: 5%;
-  }
-  .post {
-    background: #e0fddf;
-  }
-  .post img {
-    max-width: 100%;
-  }
-  article {
-    background: #fff;
-    padding: 40px 0;
-  }
-}
-
 footer {
   background: #151514;
-  color: #e0fddf;
+  color: #fff;
   text-align: center;
   padding: 10px 0;
 }
