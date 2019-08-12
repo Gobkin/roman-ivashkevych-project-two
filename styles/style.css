@@ -50,7 +50,7 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 319px) {
   p {
     line-height: 2.8rem;
   }
@@ -60,10 +60,23 @@ h3 {
   }
   h2 {
     font-size: 1.7rem;
+    letter-spacing: .5px;
     line-height: 3.5rem;
   }
   header .navbar {
     text-align: right;
+  }
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+    letter-spacing: .5px;
+    line-height: 3.5rem;
   }
 }
 
@@ -278,7 +291,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 319px) {
   .button {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -301,7 +314,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   header .hero {
     background: rgba(255, 255, 255, 0.8);
-    padding: 5% 45%;
+    padding: 5% 145px;
     border-radius: 25px;
     margin: 5%;
     -ms-flex-pack: distribute;
@@ -309,6 +322,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 29rem;
     -ms-flex-preferred-size: 29rem;
         flex-basis: 29rem;
+    font-size: 1.5rem;
   }
   header .header-img {
     -webkit-box-pack: start;
@@ -323,7 +337,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin-bottom: -25%;
   }
   .materials {
-    padding-top: 90px;
+    padding-top: 20vh;
   }
   .materials .small-box {
     width: 100%;
@@ -331,14 +345,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   .gallery-content {
     position: relative;
-    height: 35vh;
+    height: calc(35vh + (100vw / 4));
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .gallery-content img {
-    max-width: 85%;
+    max-width: 95%;
     position: absolute;
     -webkit-animation-name: fade;
             animation-name: fade;
@@ -366,8 +380,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   .info .icon {
     width: 100%;
-    height: 4.4rem;
-    width: 4.4rem;
+    height: 4.2rem;
+    width: 4.2rem;
     background: #f8fb05;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -403,12 +417,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   .wallpaper {
     background-image: url(../images/banner-image.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .search .content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 480px) {
+  .small-box {
+    -webkit-box-shadow: -15px 15px #f8fb05;
+            box-shadow: -15px 15px #f8fb05;
   }
 }
 
@@ -546,7 +568,14 @@ section:nth-child(even) {
   background: #e0fddf;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (min-width: 319px) {
+  .contact .hero {
+    font-size: 1.25rem;
+  }
   form ::-moz-placeholder {
     text-transform: uppercase;
     opacity: 1;

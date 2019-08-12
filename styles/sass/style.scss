@@ -71,7 +71,20 @@ section:nth-child(even){
     background: $section-color;
 }
 
+textarea{
+    resize: none;
+}
+
 @media (min-width: 319px){
+    
+    // CONTACT STYLES
+    .contact{
+        .hero{
+            
+            font-size: 1.25rem;
+            
+        }
+    }
     // FORM STYLES
     form{
         ::-moz-placeholder {
