@@ -6,9 +6,8 @@
 @import "blog";
 @import "contact";
 
-// @import "navbar";
-
 // GENERAL STYLES
+
 h1{
     margin:0;
 }
@@ -23,6 +22,7 @@ section{
 
 ul{
     margin:0;
+    padding:0;
 }
 
 a{
@@ -62,7 +62,7 @@ img{
 
 .button{
     color:white;
-    background: $button-color;
+    background: $secondary-color;
     border:none;
     text-transform: uppercase;
     margin-bottom: 10%;
@@ -74,7 +74,7 @@ img{
 }
 
 section:nth-child(even){
-    background: $section-color;
+    background: $primary-color;
 }
 
 textarea{
@@ -83,6 +83,16 @@ textarea{
 
 @media (min-width: 319px){
     
+    .logo{
+        position: absolute;
+        left:10%;
+    }
+
+    .navbar{
+        list-style: none;
+        flex-direction: column;
+    }
+
     // FORM STYLES
     form{
         ::-moz-placeholder {
@@ -95,22 +105,35 @@ textarea{
         input{
             margin-bottom: 20px;
             border: none;
-            background:$section-color;
-            border-bottom: 2px solid $button-color;
+            background:$primary-color;
+            border-bottom: 2px solid $secondary-color;
         }
         
         textarea{
-            background:$section-color;
-            border: 2px solid $button-color;
+            background:$primary-color;
+            border: 2px solid $secondary-color;
             margin-bottom:20px;
         }
 
         .submit{
             border:none;
-            background: $button-color;
+            background: $secondary-color;
             color: #fff;
             text-transform: uppercase;
             font-family: "Kumar One", sans-serif;
+        }
+    }
+}
+
+@media (min-width: 480px){
+    .navbar{
+        flex-direction: row;
+        justify-content:flex-end;
+        padding-right:20px;
+        li{
+            flex-basis: 10%;
+            display: inline;
+            padding:20px;   
         }
     }
 }
