@@ -1,0 +1,33 @@
+
+@media(min-width: 319px){
+    // CONTACT STYLES
+
+    .contact{
+        background-image: url(../../images/contact-image.jpg);
+        background-position-x: calc(-50% + 50vw);
+        padding-bottom:40px;
+
+        h3{
+            margin: 0;
+            width:50%;
+            padding:20px;
+        }
+            
+        .hero{
+            padding:10% 5%;
+            margin-bottom: 0;
+            font-size: 1.25rem;
+        }
+    }
+    
+    .social a{
+        color:$button-color;
+        margin:0 10px;
+    }
+    
+    .contact-form{
+        input[type="text"], input[type="email"], textarea{
+            background: #fff;
+        }
+    }
+}

@@ -1,9 +1,11 @@
-@import "typography";
 @import "setup";
+@import "typography";
 @import "variables";
 @import "animations";
 @import "index";
 @import "blog";
+@import "contact";
+
 // @import "navbar";
 
 // GENERAL STYLES
@@ -67,6 +69,10 @@ img{
     padding-top: .6rem;
 }
 
+.null{
+    display: none;
+}
+
 section:nth-child(even){
     background: $section-color;
 }
@@ -77,20 +83,13 @@ textarea{
 
 @media (min-width: 319px){
     
-    // CONTACT STYLES
-    .contact{
-        .hero{
-            
-            font-size: 1.25rem;
-            
-        }
-    }
     // FORM STYLES
     form{
         ::-moz-placeholder {
             text-transform: uppercase;
             opacity: 1;
             color: $text-color;
+            
         }
 
         input{
@@ -114,37 +113,8 @@ textarea{
             font-family: "Kumar One", sans-serif;
         }
     }
-
-// CONTACT STYLES
-
-    .contact{
-        background-image: url(../../images/contact-image.jpg);
-        background-position-x: calc(-50% + 50vw);
-        padding-bottom:40px;
-
-        h3{
-            margin: 0;
-            width:50%;
-            padding:20px;
-        }
-            
-        .hero{
-            padding:10% 5%;
-            margin-bottom: 0;
-        }
-    }
-
-    .contact-form{
-        input[type="text"], input[type="email"], textarea{
-            background: #fff;
-        }
-    }
-
-    .social a{
-        color:$button-color;
-    }
-    
 }
+
 // FOOTER STYLES
 footer{
     background: $text-color;

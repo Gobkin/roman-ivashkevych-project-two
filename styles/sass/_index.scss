@@ -8,6 +8,11 @@
     // HEADER STYLES
     header{
         background-image: url(../images/header-home.jpg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
         .navbar{
             list-style: none;
             flex-direction: column;
@@ -19,12 +24,11 @@
 
         .hero{
             background: rgba(255,255,255,0.8);
-            padding:5% 145px;
+            padding:15px;
             border-radius: 25px;
             margin:5%;
             justify-content: space-around;
             width:29rem;
-            flex-basis: 29rem;
             font-size: 1.5rem;
         }
 
@@ -35,7 +39,7 @@
 
             img{
                 position: relative;
-                margin-bottom: -25%;
+                margin-bottom: -15%;
             }
         }    
     }
@@ -43,7 +47,7 @@
     // MATERIALS STYLES
 
     .materials {
-        padding-top:20vh;
+        // padding-top:20vh;
         .small-box{
             width:100%;
             max-width: 100%;
@@ -120,10 +124,12 @@
         background-image: url(../images/banner-image.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     // SEARCH STYLES
     .search{
+        background: #fff;
         .content{
             align-items: center;
         }
@@ -131,7 +137,167 @@
 }
 
 @media (min-width: 480px){
-    .small-box{
-        box-shadow: -$shadow-sm $shadow-sm $shadow-color;
+    .header{
+
+        .hero{
+            background: none;
+            
+            h1{
+                align-self: flex-start;
+            }
+        }
+
+        .header-img{
+            max-width: 60%;
+        }
+
+        nav ul{
+            flex-direction: row;
+        }
+    }
+
+    .materials{
+        padding-top:25vh;
+
+        .small-box{
+            box-shadow: -$shadow-sm $shadow-sm $shadow-color;
+        }
+
+        .materials-content{
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .content{
+                flex-basis:50%;
+            }
+
+            .image{
+                align-self: center;
+                flex-basis:35%;
+            }
+        }
+        
+    }
+
+    .news{
+
+        .post-left{
+            img{
+                box-shadow: $shadow-sm $shadow-sm $shadow-color;
+            }
+        }
+
+        .post-right{
+            img{
+                box-shadow: -$shadow-sm $shadow-sm $shadow-color;
+            }
+        }
+    }
+
+    .wallpaper{
+        height: 30vh;
     }
 }
+
+@media (min-width: 768px){
+
+    .materials{
+        .materials-content{
+            .content{
+                flex-basis:60%;
+            }
+    
+            .image{
+                flex-basis:25%;
+            }
+        }
+    }
+
+    section.gallery{
+        padding:0;
+        .gallery-content{
+            img{
+                position:relative;
+                animation: none;
+                margin:10px;
+                width:calc((100% / 3) - 20px);
+            }
+        }
+    }
+
+    .info{
+
+        .info-posts{
+            display: flex;
+            flex-wrap: wrap;
+            .info-post{
+                flex-basis: 50%;
+                padding:30px 10px;
+            }
+        }
+    }
+
+    .news{
+
+        img{
+            max-width: none;
+            width:120%;
+        }
+
+        .image-left{
+            margin-left:$x-offset;
+            margin-top:$y-offset;
+        }
+
+        .image-right{
+            margin-right:$x-offset;
+            margin-bottom: $y-offset;
+        }
+
+
+        .content{
+            flex-direction: row;
+
+            .post-text{
+                display:flex;
+                flex-direction: column;
+            }
+
+            .post-right{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-left: 30px;
+            }
+
+            .text-right{
+                align-items: flex-start;
+            }
+
+            .post-left{
+                margin-right:30px;
+                
+            }
+
+            .text-left{
+                align-items: flex-end;
+                p{
+                    text-align: right;
+                }
+            }
+        }
+    }
+    
+    .wallpaper{
+        height: 50vh;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px){}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px){}
+/* Landscape phones and down */
+@media (max-width: 480px){}
+/*Even smaller*/
+@media(max-width: 320px){}
