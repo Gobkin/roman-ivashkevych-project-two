@@ -3,15 +3,15 @@
         font-size: 1.8rem;
     }
     //BLOG HEADER STYLES
-
-    
-    
     .blog{
         background-image: url(../images/blog-image.jpg);
         background-position-x: center;
         padding-bottom:100px;
         background-size: cover;
         
+        .logo{
+            display: none;
+        }
 
         h3{
             margin: 0;
@@ -19,8 +19,12 @@
             padding:20px;
         }
         .hero{
-            padding:20px;
-            margin-bottom: 20px;
+            padding:15px;
+            border-radius: 25px;
+            margin:5%;
+            font-size: 1.5rem;
+            align-items: flex-start;
+            // background: rgba(255, 255, 255, 0.8);
         }
     }
 
@@ -123,13 +127,20 @@
     .aside{
         position: absolute;
         right: 0;
-        top:100vh;
+        top:160vh;
         width:25vw;
         padding-bottom: 20px;
         .aside-content{
             flex-direction: column;
             .image-container{
-                width:100%
+                width:100%;
+                display: flex;
+                justify-content: flex-end;
+                margin:0;
+                img{
+                    padding:0;
+                    margin-top: -10%;
+                }
             }
         }
     }

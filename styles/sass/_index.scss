@@ -1,23 +1,23 @@
+
 @media (min-width:319px){
 
 
     // HEADER STYLES
-    header{
+    .header{
         background-image: url(../images/header-home.jpg);
         background-repeat: no-repeat;
-        background-position-x: right;
+        background-position-x: center;
         background-size: cover;
         display: flex;
         flex-direction: column;
 
         .hero{
-            background: rgba(255,255,255,0.8);
             padding:15px;
             border-radius: 25px;
             margin:5%;
-            justify-content: space-around;
-            width:70%;
             font-size: 1.5rem;
+            align-items: flex-start;
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .header-img{
@@ -96,6 +96,7 @@
         .content{
             flex-direction: column;
             align-items: center;
+            margin: 0 5%;
         }
 
         .post{
@@ -128,7 +129,8 @@
     .header{
 
         .hero{
-            // background: none;
+            width:25%;
+            padding-left:10%;
             
             h1{
                 align-self: flex-start;
@@ -165,6 +167,9 @@
     }
 
     .news{
+        .content{
+            margin:0;
+        }
 
         .post-left{
             img{

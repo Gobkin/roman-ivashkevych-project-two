@@ -183,39 +183,27 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
-}
-
 h1, h2, h3, .navbar, .button {
   text-transform: uppercase;
 }
 
-h1 {
-  font-family: "Kumar One Outline", sans-serif;
-  font-size: 6.8rem;
-  line-height: 6.4rem;
+body, .navbar {
+  font-family: "Lato", sans-serif;
 }
 
-h2 {
+h1 {
+  font-family: "Kumar One Outline", sans-serif;
+}
+
+h2, h3, .button {
   font-family: "kumar one", sans-serif;
-  font-size: 3.3rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.21rem;
 }
 
 h3 {
   font-family: "Kumar One";
-  font-size: 2.2rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.12rem;
 }
 
 .navbar {
-  font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 0.14rem;
@@ -224,7 +212,6 @@ h3 {
 }
 
 .button {
-  font-family: "Kumar One", sans-serif;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 1px;
@@ -271,6 +258,32 @@ h3 {
   }
 }
 
+@media (min-width: 940px) {
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+  }
+  h1 {
+    font-family: "Kumar One Outline", sans-serif;
+    font-size: 6.8rem;
+    line-height: 6.4rem;
+  }
+  h2 {
+    font-family: "kumar one", sans-serif;
+    font-size: 3.3rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.21rem;
+  }
+  h3 {
+    font-family: "Kumar One";
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.12rem;
+  }
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -302,10 +315,10 @@ h3 {
 }
 
 @media (min-width: 319px) {
-  header {
+  .header {
     background-image: url(../images/header-home.jpg);
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: center;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -315,17 +328,17 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .hero {
-    background: rgba(255, 255, 255, 0.8);
+  .header .hero {
     padding: 15px;
     border-radius: 25px;
     margin: 5%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 70%;
     font-size: 1.5rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: rgba(255, 255, 255, 0.8);
   }
-  header .header-img {
+  .header .header-img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -333,7 +346,7 @@ h3 {
         flex-basis: 25%;
     position: relative;
   }
-  header .header-img img {
+  .header .header-img img {
     position: relative;
     margin-bottom: -15%;
   }
@@ -400,6 +413,7 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 5%;
   }
   .news .post {
     display: -webkit-box;
@@ -430,6 +444,10 @@ h3 {
 }
 
 @media (min-width: 480px) {
+  .header .hero {
+    width: 25%;
+    padding-left: 10%;
+  }
   .header .hero h1 {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -465,6 +483,9 @@ h3 {
         align-self: center;
     -ms-flex-preferred-size: 35%;
         flex-basis: 35%;
+  }
+  .news .content {
+    margin: 0;
   }
   .news .post-left img {
     -webkit-box-shadow: 15px 15px #f8fb05;
@@ -596,14 +617,22 @@ h3 {
     padding-bottom: 100px;
     background-size: cover;
   }
+  .blog .logo {
+    display: none;
+  }
   .blog h3 {
     margin: 0;
     width: 50%;
     padding: 20px;
   }
   .blog .hero {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 5%;
+    font-size: 1.5rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .post {
     background: #e0fddf;
@@ -696,7 +725,7 @@ h3 {
   .aside {
     position: absolute;
     right: 0;
-    top: 100vh;
+    top: 160vh;
     width: 25vw;
     padding-bottom: 20px;
   }
@@ -708,6 +737,17 @@ h3 {
   }
   .aside .aside-content .image-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+  }
+  .aside .aside-content .image-container img {
+    padding: 0;
+    margin-top: -10%;
   }
 }
 
@@ -754,6 +794,10 @@ h3 {
 
 h1 {
   margin: 0;
+}
+
+h2 {
+  margin: 30px 0;
 }
 
 body {
