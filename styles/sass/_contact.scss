@@ -7,37 +7,76 @@
         background-repeat: no-repeat;
         background-position-x: right;
         background-size: cover;
-        padding-bottom:40px;
-
-        h3{
-            margin: 0;
-            width:50%;
-            padding:20px;
-        }
-            
-        .hero{
-            margin-bottom: 0;
-            font-size: 1.25rem;
-        }
     }
-    .contact-form{
-        input[type="text"], input[type="email"], textarea{
+
+    .contact-info{
+        background: $primary-color;
+        padding: 0;
+        .contact-form{
+            padding:30px;
+            width:100%;
             background: #fff;
+            input[type="text"], input[type="email"], textarea{
+                background: #fff;
+            }
+        }
+
+        .contact-other{
+            .social a{
+                color:$secondary-color;
+                margin:0 10px;
+            }
+        
+            .contact-address{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px){
+    .contact{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px){
+    .contact{
+        height: 70vh;
+    }
+
+    .contact-info{
+        .contact-form{
+            form{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                textarea, input[type="submit"]{
+                    flex-basis: 100%;
+                }
+            }
+
+            padding:30px;
+            margin-top:-10%;
+            box-shadow: $shadow-sm $shadow-sm $shadow-color;
+            input[type="text"], input[type="email"]{
+                flex-basis: 48%;
+            }
         }
     }
 
-    .social a{
-        color:$secondary-color;
-        margin:0 10px;
-    }
-
-    .contact-content{
+    .contact-info{
+        padding-bottom: 50px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        .address{
-            width:50%;
+        .contact-form{
+            flex-basis: 60%;
         }
-    } 
+    }
+
+    .contact-other{
+        flex-basis:25%;
+        align-self: center;
+    }
 }

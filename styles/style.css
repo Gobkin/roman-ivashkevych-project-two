@@ -203,6 +203,12 @@ h3 {
   font-family: "Kumar One";
 }
 
+body {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
 .navbar {
   font-size: 2rem;
   line-height: 2.9rem;
@@ -254,30 +260,22 @@ h3 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 4.1rem;
+    font-size: 5.1rem;
+    line-height: 5.5rem;
   }
 }
 
 @media (min-width: 940px) {
-  body {
-    font-family: "Lato", sans-serif;
-    font-size: 2rem;
-    line-height: 3.2rem;
-    letter-spacing: 0.2rem;
-  }
   h1 {
-    font-family: "Kumar One Outline", sans-serif;
     font-size: 6.8rem;
     line-height: 6.4rem;
   }
   h2 {
-    font-family: "kumar one", sans-serif;
     font-size: 3.3rem;
     line-height: 5.8rem;
     letter-spacing: 0.21rem;
   }
   h3 {
-    font-family: "Kumar One";
     font-size: 2.2rem;
     line-height: 2.4rem;
     letter-spacing: 0.12rem;
@@ -327,16 +325,6 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .header .hero {
-    padding: 15px;
-    border-radius: 25px;
-    margin: 5%;
-    font-size: 1.5rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background: rgba(255, 255, 255, 0.8);
   }
   .header .header-img {
     -webkit-box-pack: start;
@@ -485,7 +473,7 @@ h3 {
         flex-basis: 35%;
   }
   .news .content {
-    margin: 0;
+    margin: 5%;
   }
   .news .post-left img {
     -webkit-box-shadow: 15px 15px #f8fb05;
@@ -562,6 +550,7 @@ h3 {
     margin-bottom: -20%;
   }
   .news .content {
+    margin: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -617,23 +606,6 @@ h3 {
     padding-bottom: 100px;
     background-size: cover;
   }
-  .blog .logo {
-    display: none;
-  }
-  .blog h3 {
-    margin: 0;
-    width: 50%;
-    padding: 20px;
-  }
-  .blog .hero {
-    padding: 15px;
-    border-radius: 25px;
-    margin: 5%;
-    font-size: 1.5rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .post {
     background: #e0fddf;
   }
@@ -684,7 +656,7 @@ h3 {
     font-size: 1.8rem;
   }
   .aside img {
-    padding-top: 30px;
+    display: none;
   }
 }
 
@@ -718,6 +690,10 @@ h3 {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     margin: 0 10px;
+  }
+  .aside img {
+    display: inline-block;
+    padding-top: 30px;
   }
 }
 
@@ -757,25 +733,24 @@ h3 {
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: cover;
-    padding-bottom: 40px;
   }
-  .contact h3 {
-    margin: 0;
-    width: 50%;
-    padding: 20px;
+  .contact-info {
+    background: #e0fddf;
+    padding: 0;
   }
-  .contact .hero {
-    margin-bottom: 0;
-    font-size: 1.25rem;
-  }
-  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+  .contact-info .contact-form {
+    padding: 30px;
+    width: 100%;
     background: #fff;
   }
-  .social a {
+  .contact-info .contact-form input[type="text"], .contact-info .contact-form input[type="email"], .contact-info .contact-form textarea {
+    background: #fff;
+  }
+  .contact-info .contact-other .social a {
     color: #065635;
     margin: 0 10px;
   }
-  .contact-content {
+  .contact-info .contact-other .contact-address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -787,8 +762,59 @@ h3 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .contact-content .address {
-    width: 50%;
+}
+
+@media (min-width: 480px) {
+  .contact {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    height: 70vh;
+  }
+  .contact-info .contact-form {
+    padding: 30px;
+    margin-top: -10%;
+    -webkit-box-shadow: 15px 15px #f8fb05;
+            box-shadow: 15px 15px #f8fb05;
+  }
+  .contact-info .contact-form form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-info .contact-form form textarea, .contact-info .contact-form form input[type="submit"] {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contact-info .contact-form input[type="text"], .contact-info .contact-form input[type="email"] {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .contact-info {
+    padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-info .contact-form {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .contact-other {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -877,8 +903,22 @@ section:nth-child(even) {
   background: #e0fddf;
 }
 
+header h3 {
+  width: 50%;
+}
+
 textarea {
   resize: none;
+}
+
+.hero {
+  padding: 15px;
+  border-radius: 25px;
+  margin: 5%;
+  font-size: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (min-width: 319px) {
@@ -893,7 +933,22 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  form ::-moz-placeholder {
+  form ::-webkit-input-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #151514;
+  }
+  form :-ms-input-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #151514;
+  }
+  form ::-ms-input-placeholder {
+    text-transform: uppercase;
+    opacity: 1;
+    color: #151514;
+  }
+  form ::placeholder {
     text-transform: uppercase;
     opacity: 1;
     color: #151514;

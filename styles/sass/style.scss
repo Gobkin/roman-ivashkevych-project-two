@@ -82,8 +82,20 @@ section:nth-child(even){
     background: $primary-color;
 }
 
+header h3{
+    width:50%;
+}
+
 textarea{
     resize: none;
+}
+
+.hero{
+    padding:15px;
+    border-radius: 25px;
+    margin:5%;
+    font-size: 1.5rem;
+    align-items: flex-start;
 }
 
 @media (min-width: 319px){
@@ -100,11 +112,10 @@ textarea{
 
     // FORM STYLES
     form{
-        ::-moz-placeholder {
+        ::placeholder {
             text-transform: uppercase;
             opacity: 1;
-            color: $text-color;
-            
+            color: $text-color;  
         }
 
         input{
