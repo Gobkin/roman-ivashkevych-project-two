@@ -46,7 +46,6 @@
             margin-bottom:40px;
             img{
                 align-self: flex-start;
-                flex-basis:20%;
                 margin-right:20px;
             }
             .comment-text{
@@ -59,8 +58,10 @@
     .aside{
         align-items: center;
         background: $shadow-color;
+        
         li{
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            text-align:center;
         }
 
         img{

@@ -640,8 +640,6 @@ body {
   .comments .comment img {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
     margin-right: 20px;
   }
   .comments .comment .comment-text {
@@ -655,7 +653,8 @@ body {
     background: #f8fb05;
   }
   .aside li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
   .aside img {
     display: none;
