@@ -11,6 +11,10 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 </head>
 <body>
+    <!-- SKIP LINKS FOR ACCESSIBILITY -->
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <a href="#about" class="skip-link">Skip to about section.</a>
+    <!-- HEADER -->
     <header class="header">
         <nav>
             <ul class="navbar flex">
@@ -24,11 +28,11 @@
             <h1>sanctuary helpers</h1>
         </div>
         <div class="header-img flex">
-            <img src="images/header-box.png" alt="">
+            <img src="images/header-box.png" alt="two blue arm chairs side by side">
         </div>
     </header>
-
-    <main>
+    
+    <main id="maincontent">
         <section class="materials">
             <div class="wrapper materials-content">
                 <div class="content flex column">
@@ -37,65 +41,71 @@
                     <button class="button">find out more</button>
                 </div>
                 <div class="flex image">
-                    <img class="small-box" src="images/small-box.jpg" alt="">
+                    <img class="small-box" src="images/small-box.jpg" alt="comfortable looking couch with blue abstract painting behind it">
                 </div>
             </div>
         </section>
 
+        <!-- GALLERY TURNS INTO ANIMATION ON MOBILE -->
         <section class="gallery">
             <div class="flex just-center wrapper gallery-content">
-                <img class="gallery-image1" src="images/gallery-image-1.jpg" alt="">
-                <img class="gallery-image2" src="images/gallery-image-2.jpg" alt="">
-                <img class="gallery-image3" src="images/gallery-image-3.jpg" alt="">
+                <img class="gallery-image1" src="images/gallery-image-1.jpg" alt="blue dresser with vase and picture frames on on top">
+                <img class="gallery-image2" src="images/gallery-image-2.jpg" alt="round coffee table with magazines and orange couch behind it">
+                <img class="gallery-image3" src="images/gallery-image-3.jpg" alt="black intricately designed chair">
             </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="info">
-            <div class="wrapper">
-                <div class="info-posts">
-                    <div class="offers info-post">
-                        <div class="title flex">
-                            <div class= "flex icon">
-                                <i class=" fas fa-home"></i>
-                            </div>
-                            <h2>customized offers</h2>
-                        </div>
+            <div class="wrapper info-posts">
+                <div class="offers info-post flex">
+                    <div class= "flex icon">
+                        <i class=" fas fa-home"></i>
+                    </div>
+                    <div class="title flex column">
+                        <h2>customized offers</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam commodi libero voluptatem a, eaque ex ut architecto neque perspiciatis exercitationem. Obcaecati ipsam porro eaque cumque sapiente, aspernatur debitis voluptas!</p>
                     </div>
-                    <div class="community info-post">
-                        <div class="title flex">
-                            <div class="flex icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h2>community</h2>
-                        </div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam commodi libero voluptatem a, eaque ex ut architecto neque perspiciatis exercitationem. Obcaecati ipsam porro eaque cumque sapiente, aspernatur debitis voluptas!</p>
+                </div>
+                
+                <div class="community info-post flex">
+                    <div class="flex icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="blog-info info-post">
-                        <div class="title flex">
-                            <div class="icon flex">
-                                <i class="fas fa-file"></i>
-                            </div>
-                            <h2>blog</h2>
-                        </div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam commodi libero voluptatem a, eaque ex ut architecto neque perspiciatis exercitationem. Obcaecati ipsam porro eaque cumque sapiente, aspernatur debitis voluptas!</p>
-                    </div>
-                    <div class="in-touch info-post">
-                        <div class="title flex">
-                            <div class="icon flex">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <h2>get in touch</h2>
-                        </div>
+                    <div class="title flex column">
+                        <h2>community</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam commodi libero voluptatem a, eaque ex ut architecto neque perspiciatis exercitationem. Obcaecati ipsam porro eaque cumque sapiente, aspernatur debitis voluptas!</p>
                     </div>
-                </info-posts>
+                </div>
+
+                <div class="blog-info info-post flex">
+                    <div class="icon flex">
+                        <i class="fas fa-file"></i>
+                    </div>
+                    <div class="title flex column">
+                        <h2>blog</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam commodi libero voluptatem a, eaque ex ut architecto neque perspiciatis exercitationem. Obcaecati ipsam porro eaque cumque sapiente, aspernatur debitis voluptas!</p>
+                    </div>
+                </div>
+
+                <div class="in-touch info-post flex">
+                    <div class="icon flex">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="title flex column">
+                        <h2>get in touch</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam commodi libero voluptatem a, eaque ex ut architecto neque perspiciatis exercitationem. Obcaecati ipsam porro eaque cumque sapiente, aspernatur debitis voluptas!</p>
+                    </div>
+                </div>
+                
             </div>
         </section>
-
+        <!-- NEWS SECTION -->
         <section class="news">
             <div class="flex content">
                 <div class="post post-left">
                     <div class="image-container">
-                        <img class="image-left" class="" src="images/left-image.jpg" alt="">
+                        <img class="image-left" class="" src="images/left-image.jpg" alt="table with small green plant on top and two whitte chairs">
                     </div>
                     <div class="post-text text-left flex column">
                         <h2>new locations</h2>
@@ -105,7 +115,7 @@
                 </div>
                 <div class="post post-right">
                     <div class="image-container">
-                        <img class="image-right" src="images/right-image.jpg" alt="">
+                        <img class="image-right" src="images/right-image.jpg" alt="two wickeer chairs with round table in between">
                     </div>
                     <div class="post-text text-right flex column">
                         <h2>group programs</h2>
@@ -133,6 +143,7 @@
             </div>
         </section>
     </main>
+    <!--FOOTER-->
     <footer>
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>

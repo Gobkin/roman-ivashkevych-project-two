@@ -8,18 +8,19 @@
         background-position-x: right;
         background-size: cover;
     }
+    .contact-form{
+        padding:30px;
+        width:100%;
+        background: #fff;
+        input[type="text"], input[type="email"], textarea{
+            background: #fff;
+        }
+    }
 
     .contact-info{
         background: $primary-color;
         padding: 0;
-        .contact-form{
-            padding:30px;
-            width:100%;
-            background: #fff;
-            input[type="text"], input[type="email"], textarea{
-                background: #fff;
-            }
-        }
+        
 
         .contact-other{
             .social a{
@@ -49,21 +50,9 @@
 
     .contact-info{
         .contact-form{
-            form{
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                textarea, input[type="submit"]{
-                    flex-basis: 100%;
-                }
-            }
-
             padding:30px;
             margin-top:-10%;
             box-shadow: $shadow-sm $shadow-sm $shadow-color;
-            input[type="text"], input[type="email"]{
-                flex-basis: 48%;
-            }
         }
     }
 

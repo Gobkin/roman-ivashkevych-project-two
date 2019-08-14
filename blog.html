@@ -10,6 +10,8 @@
     <title>Sanctuary Helpers - Blog</title>
 </head>
 <body>
+    <a href="#post" class="skip-link">Skip to blogpost.</a>
+    <a href="#comments" class="skip-link">Skip to comments section.</a>
     <header class="blog">
         <div class="logo">
             <h3>sanctuary helpers</h3>
@@ -29,11 +31,12 @@
     </header>
 
     <main>
-        <section class="post">
+        <!-- BLOG POST SECTION -->
+        <section id="post" class="post">
             <div class="footprint">
                 <article>  
                     <div class="image-container">
-                        <img class="blog-image" src="images/blog-post-image.jpg" alt="">
+                        <img class="blog-image" src="images/blog-post-image.jpg" alt="blue love seat with white cushions">
                     </div>
                     <div class="wrapper content">
                         <h2>finding the right pieces for new space</h2>
@@ -47,41 +50,47 @@
                 </article>
             </div>
         </section>
-        <section class="comments">
+        <!-- COMMENT SECTION -->
+        <section id="comments" class="comments">
             <div class="footprint">
                 <div class="wrapper">
                     <h3>comments:</h3>
                     <div class="comment flex">
-                        <img src="images/comment-image.jpg" alt="">
+                        <img src="images/comment-image.jpg" alt="young asian looking man">
                         <div  class="comment-text">
                             <h4>tuesday october 9th, 2019 by davin</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque animi deserunt, debitis assumenda quibusdam perferendis aliquid sit quia harum nihil ipsa nesciunt, quam odit optio omnis reiciendis atque et laborum?</p>
                         </div>
                     </div>
                     <div class="comment flex">
-                        <img src="images/comment-image2.jpg" alt="">
+                        <img src="images/comment-image2.jpg" alt="two zebras">
                         <div class="comment-text">
                             <h4>wednsday october 10th, 2019 by lisa</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ut id possimus asperiores porro qui culpa necessitatibus illum est provident quisquam animi ratione numquam tempora, consequatur ab sed dolorem iste!</p>
                         </div>
                     </div>
-                    <form class="flex column" action="">
+                    <form class="comment-form flex column" action="">
+
                         <input type="text" id="name" name="name" placeholder="name">
-                        <label for="name" class="visually-hidden">name</label>
+                        <label for="name" class="visually-hidden">enter name</label>
+
                         <input type="email" id="email" name="email" placeholder="email address">
-                        <label for="email" class="visually-hidden">email address</label>
+                        <label for="email" class="visually-hidden">enter email address</label>
+
                         <textarea name="comment" id="comment-body" cols="30" rows="10" placeholder="comment"></textarea>
-                        <label for="comment" class="visually-hidden"></label>
-                        <input type="submit" class="submit" value="post coment">
-                    </form>
+                        <label for="comment" class="visually-hidden">enter comment</label>
+
+                        <input id="submit" type="submit" class="submit" value="post coment">
+                        <label for="submit" class="visually-hidden">submit comment</label>
+                    </form> 
                 </div>
             </div>
         </section>  
-
+        <!-- SIDEBAR -->
         <aside class="aside">
             <div class="flex column aside-content">
                 <div class="image-container">
-                    <img src="images/sidebar-image.jpg" alt="">
+                    <img src="images/sidebar-image.jpg" alt="red geometric shaped lamp">
                 </div>
                 <div class="wrapper">
                     <div class="mission">

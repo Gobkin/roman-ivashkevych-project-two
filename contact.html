@@ -12,7 +12,9 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 </head>
 <body>
-    <header class="contact">
+    <a href="#form" class="skip-link">Skip to contact form.</a>
+    
+    <header id="contact" class="contact">
         <div class="logo">
             <h3>sanctuary helpers</h3>
         </div>
@@ -35,27 +37,31 @@
                 <form class="flex column" action="">
                     <input type="text" id="name" name="name" placeholder="name">
                     <label for="name" class="visually-hidden">name</label>
+
                     <input type="email" id="email" name="email" placeholder="email address">
                     <label for="email" class="visually-hidden">email address</label>
+
                     <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
                     <label class="visually-hidden" for="message">enter your message</label>
+
                     <input class="submit" type="submit" value="submit">
+                    <label class="visually-hidden" for="submit">submit form</label>
                 </form>
             </div>
             <div class="contact-other wrapper">
                 <div class="social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="go to facebook page"><i aria-hidden class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="go to instagram page"><i aria-hidden class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="go to twitter page"><i aria-hidden class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="go to whatsapp page"><i aria-hidden class="fab fa-whatsapp"></i></a>
                 </div>
                 <div class="contact-address">
                     <p class="email">info@email.com</p>
                     <p class="address">
-                        123 - 456 - 7890
-                        123 Queen Street West,
-                        Unit 10
-                        Toronto, Ontario
+                        123 - 456 - 7890</br>
+                        123 Queen Street West,</br>
+                        Unit 10</br>
+                        Toronto, Ontario</br>
                         M5V2D5
                     </p>
                 </div>
